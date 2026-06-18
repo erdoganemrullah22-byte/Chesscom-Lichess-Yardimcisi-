@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "Lichess + Chess.com Stockfish Yardımcısı",
+  "version": "1.4.0",
+  "description": "Lichess.org ve Chess.com üzerinde Stockfish motorunu kullanarak en iyi hamleyi gösterir.",
+  "author": "eklentim",
+
+  "permissions": [
+    "storage",
+    "offscreen",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "https://lichess.org/*",
+    "https://www.chess.com/*",
+    "https://chess.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/*"],
+      "js": ["page-injector.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "https://lichess.org/*",
+        "https://www.chess.com/*",
+        "https://chess.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["stockfish.js", "stockfish.wasm", "page-script.js"],
+      "matches": [
+        "https://lichess.org/*",
+        "https://www.chess.com/*",
+        "https://chess.com/*"
+      ]
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lichess + Chess.com Stockfish Yardımcısı"
+  },
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+
+  "minimum_chrome_version": "109"
+}

@@ -1,0 +1,143 @@
+/*
+ * Lichess + Chess.com Stockfish Yardımcısı - Görsel Stiller
+ */
+
+#lichess-sf-helper-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* ===================================================================
+ * Skor kutusu (eval bar + bilgi paneli)
+ * =================================================================== */
+#lichess-sf-helper-eval {
+  position: fixed !important;
+  right: 16px !important;
+  bottom: 16px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 2147483647 !important;
+  width: 300px !important;
+  max-width: 380px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: rgba(20, 20, 28, 0.92) !important;
+  color: #f1f1f1 !important;
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(6px) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  overflow: hidden !important;
+}
+
+/* ----- Üstünlük çubuğu ----- */
+#lichess-sf-helper-eval .sfh-bar {
+  position: relative !important;
+  width: 28px !important;
+  min-width: 28px !important;
+  background: #1a1a22 !important;
+  border-right: 1px solid rgba(255,255,255,0.08) !important;
+  overflow: hidden !important;
+}
+
+#lichess-sf-helper-eval .sfh-bar-fill {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: 50%;
+  background: #f0f0f0 !important;
+  transition: height 0.25s ease !important;
+}
+
+#lichess-sf-helper-eval .sfh-bar-label {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 4px !important;
+  text-align: center !important;
+  font-family: 'Consolas', 'Courier New', monospace !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #1a1a22 !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  text-shadow: 0 0 2px rgba(255,255,255,0.4) !important;
+}
+
+/* ----- Bilgi paneli ----- */
+#lichess-sf-helper-eval .sfh-content {
+  flex: 1 1 auto !important;
+  padding: 10px 14px 12px !important;
+  min-width: 0 !important;
+}
+
+#lichess-sf-helper-eval .sfh-title {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  color: #4fc3f7 !important;
+  margin-bottom: 6px !important;
+  letter-spacing: 0.3px !important;
+  cursor: move !important;
+  user-select: none !important;
+  padding: 2px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+#lichess-sf-helper-eval .sfh-row {
+  display: flex !important;
+  gap: 8px !important;
+  margin-top: 2px !important;
+}
+
+#lichess-sf-helper-eval .sfh-label {
+  color: #9aa0a6 !important;
+  min-width: 90px !important;
+  flex-shrink: 0 !important;
+}
+
+#lichess-sf-helper-eval .sfh-best {
+  font-weight: 700 !important;
+  color: #66bb6a !important;
+  font-family: 'Consolas', 'Courier New', monospace !important;
+}
+
+#lichess-sf-helper-eval .sfh-score {
+  font-weight: 600 !important;
+  color: #ffca28 !important;
+  font-family: 'Consolas', 'Courier New', monospace !important;
+}
+
+#lichess-sf-helper-eval .sfh-depth {
+  color: #b0bec5 !important;
+}
+
+#lichess-sf-helper-eval .sfh-pv-text {
+  font-family: 'Consolas', 'Courier New', monospace !important;
+  font-size: 12px !important;
+  color: #cfd8dc !important;
+  word-break: break-all !important;
+}
+
+#lichess-sf-helper-eval .sfh-pv {
+  margin-top: 6px !important;
+  padding-top: 6px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  flex-direction: column !important;
+}
