@@ -1,17 +1,18 @@
-# Kurulum
+# Installation
 
-**1. Chrome Eklentiler Sayfasını Açın**
-* Google Chrome tarayıcınızı açın.
-* Adres çubuğuna `chrome://extensions/` yazın ve **Enter**'a basın.
+**1. Open the Chrome Extensions Page**
+* Open your Google Chrome browser.
+* Type `chrome://extensions/` in the address bar and press **Enter**.
 
-**2. Geliştirici Modunu Aktifleştirin**
-* Açılan sayfanın sağ üst köşesinde bulunan **Geliştirici modu** (Developer mode) anahtarını bularak tıklayın ve açık konuma getirin.
+**2. Activate Developer Mode**
+* Find and click the **Developer mode** switch in the upper right corner of the page that opens and turn it on.
 
-**3. Eklentiyi Yükleyin**
-* Geliştirici modunu açtığınızda, sayfanın sol üst kısmında üç yeni buton belirecektir.
-* **Paketlenmemiş öğe yükle** (Load unpacked) butonuna tıklayın.
-* Açılan dosya seçici penceresinden, 1. adımda hazırladığınız "bibrb" eklenti klasörünü seçin ve **Klasörü Seç**'e tıklayın.
+**3. Install the Extension**
+* When you open developer mode, three new buttons will appear in the upper left corner of the page.
+* Click the **Load unpacked** button.
+* In the file selector window that opens, select the extension folder you prepared in step 1 and click **Select Folder**.
 
-**4. Kurulumu Tamamlayın**
-* İşlemi doğru yaptıysanız eklentiniz başarıyla yüklenecek ve eklentiler listenizde bir kart olarak belirecektir. 
-* Tarayıcınızın sağ üst köşesindeki yapboz (Eklentiler) simgesine tıklayarak yeni kurduğunuz eklentiyi sabitleyebilir (pin) ve hemen kullanmaya başlayabilirsiniz.
+**4. Complete the Installation**
+* If you have done the process correctly, your extension will be successfully installed and will appear as a card in your extensions list.
+
+* You can pin (pin) the newly installed extension by clicking the puzzle (Extensions) icon in the upper right corner of your browser and start using it immediately.
